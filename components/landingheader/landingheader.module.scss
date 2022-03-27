@@ -1,0 +1,38 @@
+.container {
+  position: fixed;
+  width: 100%;
+  padding: 30px 20px 20px;
+  backdrop-filter: blur(8px);
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .links_wrapper {
+      a {
+        color: #000;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 16px;
+
+        &:hover {
+          color: var(--secondaryFg);
+        }
+      }
+
+      a:nth-child(2) {
+        background-color: var(--secondaryBg);
+        margin-left: 10px;
+        border-radius: 18px;
+
+        &:hover {
+          color: var(--foreground);
+          background-color: var(--specialColor);
+        }
+      }
+    }
+  }
+}
