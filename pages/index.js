@@ -3,12 +3,17 @@ import Image from "next/image";
 
 import LandingHeader from "components/landingheader/landingheader";
 import LandingHero from "components/landinghero/landinghero";
+import Page from "components/page/page";
 
 export default function Home() {
   return (
-    <div className="">
+    <Page>
       <LandingHeader />
       <LandingHero />
-    </div>
+
+      <div className="">
+        
+      </div>
+    </Page>
   );
 }
