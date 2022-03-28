@@ -12,7 +12,7 @@ function LandingHero() {
         <div className={styles.claim_link_wrapper}>
           <p>nuke.io/</p>
           <input type="text" placeholder="username" />
-          <button>Claim username</button>
+          <button>Claim</button>
         </div>
       </div>
     </div>
