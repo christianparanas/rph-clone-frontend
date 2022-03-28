@@ -1,0 +1,29 @@
+.marquee_container {
+  height: 100vh;
+  width: 100%;
+  min-height: fit-content;
+  padding: 20px 0;
+
+  .marquee_wrapper {
+    width: 100%;
+    text-align: center;
+
+    .content {
+      margin-top: 50px;
+
+      .mq {
+        
+        h2 {
+          margin-right: 30px;
+          color: var(--secondaryFg);
+          cursor: pointer;
+          transition: all .3s ease;
+
+          &:hover {
+            color: var(--foreground);
+          }
+        }
+      }
+    }
+  }
+}
