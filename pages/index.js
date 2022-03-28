@@ -9,6 +9,7 @@ import styles from "styles/home.module.scss";
 import LandingHeader from "components/landingheader/landingheader";
 import LandingHero from "components/landinghero/landinghero";
 import Page from "components/page/page";
+import { Fragment } from "react";
 
 const jobs = [
   [
@@ -64,17 +65,19 @@ export default function Home() {
           <div className={styles.content}>
             {jobs.map((job, key) => {
               return (
-                <Marquee
-                  speed={60}
-                  gradient={false}
-                  direction={key == 1 ? "left" : "right"}
-                  pauseOnHover={true}
-                  className={styles.mq}
-                >
-                  {job.map((skill, idx) => {
-                    return <h2>{skill}</h2>;
-                  })}
-                </Marquee>
+                <Fragment key={key}>
+                  <Marquee
+                    speed={60}
+                    gradient={false}
+                    direction={key == 1 ? "left" : "right"}
+                    pauseOnHover={true}
+                    className={styles.mq}
+                  >
+                    {job.map((skill, idx) => {
+                      return <h2 key={idx}>{skill}</h2>;
+                    })}
+                  </Marquee>
+                </Fragment>
               );
             })}
           </div>
