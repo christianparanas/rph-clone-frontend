@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { Fragment } from "react";
 
 // import styles
 import styles from "styles/home.module.scss";
@@ -9,7 +10,7 @@ import styles from "styles/home.module.scss";
 import LandingHeader from "components/landingheader/landingheader";
 import LandingHero from "components/landinghero/landinghero";
 import Page from "components/page/page";
-import { Fragment } from "react";
+import OfferCard from "components/offercard/offercard";
 
 const jobs = [
   [
@@ -53,6 +54,40 @@ const jobs = [
   ],
 ];
 
+const offers = [
+  {
+    img: "/icon.png",
+    title: "Your time. Your rules.",
+    description: "Have the work flexibility you’ve always wanted. Do the job anywhere at any time."
+  },
+  {
+    img: "/icon.png",
+    title: "Stay in the loop.",
+    description: "Be in the know with your fellow Filipino freelancers in our private community."
+  },
+  {
+    img: "/icon.png",
+    title: "Chill transactions.",
+    description: "No bidding. No negotiations. No job hunting. No competition over projects with others."
+  },
+  {
+    img: "/icon.png",
+    title: "Your money. All yours.",
+    description: "Nuke.io guarantees it's 100% free for all freelancers - no hidden charges, just quality service!"
+  },
+  {
+    img: "/icon.png",
+    title: "24/7 Buddy",
+    description: "We’re your BFF ready to help with your concerns and suggestions, 24/7!"
+  },
+  {
+    img: "/icon.png",
+    title: "Earn big. Earn quick.",
+    description: "Set your rate and receive your payment ASAP."
+  },
+
+]
+
 export default function Home() {
   return (
     <Page>
@@ -80,6 +115,18 @@ export default function Home() {
                 </Fragment>
               );
             })}
+          </div>
+
+          <div className={styles.perks}>
+            <p>WHY JOIN US?</p>
+            <h1>Live your work dream</h1>
+            <div className={styles.perks_content}>
+              {offers.map((offer, key) => {
+                return (
+                  <OfferCard key={key} props={offer} />
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>
