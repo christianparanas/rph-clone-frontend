@@ -5,7 +5,7 @@ export default function Google() {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 48 48"
       enableBackground="new 0 0 48 48"
       fontSize="18px"
