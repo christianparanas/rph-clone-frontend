@@ -38,7 +38,7 @@ export default function Login() {
             </div>
 
             <div className={styles.signup_wrapper}>
-              No account? <Link href="/signup"><span>Sign Up</span></Link>
+              No account? <Link href="/signup"><span>Sign up</span></Link>
             </div>
           </div>
         </div>

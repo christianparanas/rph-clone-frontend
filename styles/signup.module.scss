@@ -18,6 +18,36 @@
         margin-bottom: 30px;
       }
 
+      .claim_link_wrapper {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+
+        input {
+          width: 100%;
+          padding: 15px 20px 15px 79px;
+          border-radius: 10px;
+          border: 0;
+          outline: 0;
+          background-color: var(--background);
+        }
+
+        .prefix {
+          margin: 0;
+          position: absolute;
+        }
+
+        .prefix {
+          left: 20px;
+          top: 40px;
+        }
+
+        .header {
+          font-size: 12px;
+          text-align: start;
+        }
+      }
+
       .providers {
         display: grid;
         grid-gap: 10px;
@@ -27,7 +57,7 @@
           border: 3px solid var(--background);
           padding: 12px 20px;
           cursor: pointer;
-          border-radius: 18px;
+          border-radius: 100px;
           transition: all 0.3s ease;
           font-size: 14px;
           display: flex;
@@ -44,14 +74,14 @@
         }
       }
 
-      .signup_wrapper {
+      .login_wrapper {
         font-size: 14px;
         margin: 40px 20px 10px;
-       
+
         span {
           color: var(--secondaryFg);
           cursor: pointer;
-          transition: all .3s ease;
+          transition: all 0.3s ease;
 
           &:hover {
             color: var(--specialColor);
