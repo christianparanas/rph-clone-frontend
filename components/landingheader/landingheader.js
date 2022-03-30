@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 import styles from './landingheader.module.scss'
 
@@ -8,8 +9,8 @@ function LandingHeader() {
       <div className={styles.wrapper}>
         <div className="">Nuke</div>
         <div className={styles.links_wrapper}>
-          <a href="" className="">Login</a>
-          <a href="" className="">Sign Up</a>
+          <Link href="/login" className="">Login</Link>
+          <Link href="/signup" className="">Sign Up</Link>
         </div>
       </div>
     </div>

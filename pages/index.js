@@ -105,7 +105,6 @@ export default function Home() {
                     speed={60}
                     gradient={false}
                     direction={key == 1 ? "left" : "right"}
-                    pauseOnHover={true}
                     className={styles.mq}
                   >
                     {job.map((skill, idx) => {
