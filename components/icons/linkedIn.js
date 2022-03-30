@@ -5,10 +5,10 @@ export default function LinkedIn() {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 448 512"
-      font-size="18px"
-      aria-hidden="true"
+      fontSize="18px"
+      ariaHidden="true"
       focusable="false"
       style={{ color: "#2867B2" }}
       height="1em"

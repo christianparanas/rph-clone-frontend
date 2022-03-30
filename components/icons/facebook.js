@@ -5,10 +5,10 @@ export default function Facebook() {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 320 512"
-      font-size="18px"
-      aria-hidden="true"
+      fontSize="18px"
+      ariaHidden="true"
       style={{ color: "#2867B2" }}
       focusable="false"
       height="1em"
